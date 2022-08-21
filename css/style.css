@@ -1,0 +1,279 @@
+/* Googel Font Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/********** Utility **********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 62.5%;
+}
+
+:root {
+  --header-bg: #7030cc;
+  --btn-bg: #1bbcef;
+  --dark-gray: #1b1d21;
+  --light-gray: #4d4f51;
+  --white: #ffffff;
+  --black: #000000;
+  --off-white: #f2f3f3;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/********** Header **********/
+.head {
+  background-color: var(--header-bg);
+  padding: 2% 5%;
+}
+
+/*** navbar ***/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* logo */
+.logo {
+  width: 12rem;
+}
+
+/* nav-menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  margin-left: 5rem;
+  color: var(--off-white);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: var(--btn-bg);
+}
+
+.nav-list .active {
+  border-bottom: 1px solid red;
+  color: var(--btn-bg);
+  font-weight: 600;
+}
+
+/* nav-btn */
+.nav-btn {
+  background-color: var(--btn-bg);
+  padding: 1rem 3rem;
+  color: var(--white);
+}
+
+.nav-btn:hover {
+  color: var(--white);
+}
+
+/*** showcase ***/
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* tagline */
+.tagline {
+  width: 40%;
+}
+
+.tagline h1 {
+  font-size: 6.4rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.p-light {
+  font-size: 1.6rem;
+  color: var(--off-white);
+}
+
+/* img */
+.showcase-img {
+  width: 55%;
+}
+
+.showcase-img img {
+  width: 100%;
+}
+
+/********** Section 1 Benefits **********/
+.benefits {
+  padding: 4% 5% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*** benefit img ***/
+.benefit-img {
+  width: 50%;
+}
+
+.benefit-img img {
+  width: 100%;
+}
+
+/*** benefit Content ***/
+.benefit-content {
+  width: 30%;
+}
+
+.h2-dark {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+
+/* common for all 3 */
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.heading img {
+  width: 2rem;
+  margin-right: 1rem;
+  vertical-align: text-top;
+}
+
+.h3-dark {
+  font-size: 2rem;
+  color: var(--dark-gray);
+}
+
+.para {
+  margin-left: 3rem;
+}
+
+.p-dark {
+  font-size: 1.4rem;
+  margin-bottom: 4rem;
+  color: var(--light-gray);
+}
+
+/********** Section 2 Features **********/
+.features {
+  padding: 2% 5% 4%;
+  text-align: center;
+}
+
+.features .h2-dark {
+  width: 30%;
+  margin: 0 auto 5rem;
+}
+
+/* feature wrapper */
+.feature-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* box size common for all  */
+.common-feature {
+  width: 20%;
+  box-shadow: 5px 5px 8px 0px rgba(87, 87, 87, 0.79);
+  padding-top: 6rem;
+  border-radius: 3rem;
+}
+
+/** feature img **/
+.feature-img {
+  width: 120px;
+  height: 120px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+}
+
+.common-feature img {
+  width: 6rem;
+}
+
+/* feature 1 */
+.feature1 .feature-img {
+  background-color: #faeaeb;
+}
+
+/* feature 2 */
+.feature2 .feature-img {
+  background-color: #fbf0ee;
+}
+
+/* feature 3 */
+.feature3 .feature-img {
+  background-color: #e9f4f6;
+}
+
+/* feature 4 */
+.feature4 .feature-img {
+  background-color: #f2e7f5;
+}
+
+/** feature caption **/
+.feature-caption {
+  padding: 2rem;
+  border-radius: 3rem;
+}
+
+/* active */
+.feature-caption.active {
+  background-color: var(--header-bg);
+}
+
+.feature-caption.active .h3-dark {
+  color: var(--white);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.feature-caption.active .p-dark {
+  color: var(--white);
+  font-size: 1.4;
+  margin-bottom: 0;
+}
+
+/* normal */
+.feature-caption .h3-dark {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: auto;
+  margin-bottom: 1rem;
+  width: 92%;
+}
+
+.feature-caption .p-dark {
+  font-size: 1.4;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 0;
+}
