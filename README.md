@@ -15,13 +15,9 @@ The Landing page contains:
 
 &emsp; &ensp; [![HTML5](./img/HTML%20badge.svg)](https://developer.mozilla.org/en-US/docs/Web/HTML) [![CSS3](./img/CSS%20badge.svg)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
----
-
 ## 💻 Check out the link below for a preview.
 
 &emsp; &ensp; &ensp;[Live Preview](https://saas-product-landing-page.netlify.app/)
-
----
 
 ## 📸 Screenshot
 
